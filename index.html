@@ -7,7 +7,7 @@
 <title>
     二青茅舍
 </title>
-<link rel="shortcut icon" href="https://zhaohanqing528.github.io//favicon.ico?v=1578645028020">
+<link rel="shortcut icon" href="https://zhaohanqing528.github.io//favicon.ico?v=1586778920012">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
@@ -27,7 +27,7 @@
     <div class="nav">
         <div class="logo">
             <a href="https://zhaohanqing528.github.io/">
-                <img class="avatar" src="https://zhaohanqing528.github.io//images/avatar.png?v=1578645028020" alt="">
+                <img class="avatar" src="https://zhaohanqing528.github.io//images/avatar.png?v=1586778920012" alt="">
             </a>
             <div class="site-title">
                 <h1>
@@ -89,6 +89,78 @@
                 <div id="content" class="main-container-left">
                     
         
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://zhaohanqing528.github.io/c-cheng-xu-qing-dan-97">
+                        C程序清单9.7
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2020-04-13</time>
+                    
+                </div>
+                <div class="post-article">
+                    
+                            <div class="post-content">
+                                
+                                        <div class="post-content-content">
+                                            #include&amp;lt;stdio.h&amp;gt;
+long fact(int n);
+long rfact(int n);
+
+int main(void)
+{
+    int num;
+
+    printf(&amp;quot;This program calculates factorials.\nEnter a value in the range 0-12(q to quit):\n&amp;quot;);
+    while (scanf_s(&amp;quot;%d&amp;quot;, &amp;amp;num) == 1)
+    {
+        if (num &amp;lt; 0)
+            printf(&amp;quot;No negetive numbers, please.\n&amp;quot;);
+        else if (num &amp;gt; 12)
+            printf(&amp;quot;Keep input under 13.\n&amp;quot;);
+        else
+        {
+            printf(&amp;quot;loop: %d factorial=%ld\n&amp;quot;,num,fact(num));
+            printf(&amp;quot;recursion: %d factorial=%ld\n&amp;quot;, num, rfact(num));
+        }
+        printf(&amp;quot;Enter a value in the range 0-12(q to quit):\n&amp;quot;);
+    }
+    printf(&amp;quot;Bye!\n&amp;quot;);
+
+    return 0;
+}
+
+long fact(int n)
+{
+    long ans;
+
+    for (ans = 1; n &amp;gt; 1; n--)
+        ans *= n;
+
+    return ans;
+}
+
+long rfact(int n)
+{
+    long ans;
+
+    if (n &amp;gt; 0)
+        ans = n * rfact(n - 1);
+    else
+        ans = 1;
+
+    return ans;
+}
+
+
+                                        </div>
+                                        
+                                            <a class="btn btn-text" href="https://zhaohanqing528.github.io/c-cheng-xu-qing-dan-97">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
                 <!-- 翻页 -->
                 
                 </div>
@@ -100,7 +172,7 @@
                     <!-- 个人信息 -->
                     
     <div class="id_card i-card">
-        <div class="id_card-avatar" style="background-image: url(https://zhaohanqing528.github.io//images/avatar.png?v=1578645028020)">
+        <div class="id_card-avatar" style="background-image: url(https://zhaohanqing528.github.io//images/avatar.png?v=1586778920012)">
         </div>
         <h1 class="id_card-title">
             二青茅舍
