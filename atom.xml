@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://zhaohanqing528.github.io/</id>
     <title>二青茅舍</title>
-    <updated>2020-07-19T07:37:05.154Z</updated>
+    <updated>2020-07-19T07:42:20.519Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://zhaohanqing528.github.io/"/>
     <link rel="self" href="https://zhaohanqing528.github.io/atom.xml"/>
@@ -11,60 +11,12 @@
     <icon>https://zhaohanqing528.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 二青茅舍</rights>
     <entry>
-        <title type="html"><![CDATA[C程序清单9.7]]></title>
-        <id>https://zhaohanqing528.github.io/c-cheng-xu-qing-dan-97</id>
-        <link href="https://zhaohanqing528.github.io/c-cheng-xu-qing-dan-97">
+        <title type="html"><![CDATA[测试]]></title>
+        <id>https://zhaohanqing528.github.io/ce-shi</id>
+        <link href="https://zhaohanqing528.github.io/ce-shi">
         </link>
-        <updated>2020-04-13T11:45:52.000Z</updated>
-        <content type="html"><![CDATA[<pre><code>#include&lt;stdio.h&gt;
-long fact(int n);
-long rfact(int n);
-
-int main(void)
-{
-    int num;
-
-    printf(&quot;This program calculates factorials.\nEnter a value in the range 0-12(q to quit):\n&quot;);
-    while (scanf_s(&quot;%d&quot;, &amp;num) == 1)
-    {
-        if (num &lt; 0)
-            printf(&quot;No negetive numbers, please.\n&quot;);
-        else if (num &gt; 12)
-            printf(&quot;Keep input under 13.\n&quot;);
-        else
-        {
-            printf(&quot;loop: %d factorial=%ld\n&quot;,num,fact(num));
-            printf(&quot;recursion: %d factorial=%ld\n&quot;, num, rfact(num));
-        }
-        printf(&quot;Enter a value in the range 0-12(q to quit):\n&quot;);
-    }
-    printf(&quot;Bye!\n&quot;);
-
-    return 0;
-}
-
-long fact(int n)
-{
-    long ans;
-
-    for (ans = 1; n &gt; 1; n--)
-        ans *= n;
-
-    return ans;
-}
-
-long rfact(int n)
-{
-    long ans;
-
-    if (n &gt; 0)
-        ans = n * rfact(n - 1);
-    else
-        ans = 1;
-
-    return ans;
-}
-</code></pre>
+        <updated>2020-07-19T07:41:59.000Z</updated>
+        <content type="html"><![CDATA[<p>网络连通性测试</p>
 ]]></content>
     </entry>
 </feed>
